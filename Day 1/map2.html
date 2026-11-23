@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const myMap = new Map();
+    myMap.set("p1", "Laptop");
+    myMap.set("price1", 55000);
+
+    myMap.set("p2", "Headphones");
+    myMap.set("price2", 1999);
+
+    myMap.set("p3", "Smartwatch");
+    myMap.set("price3", 3499);
+    console.log("Original products:", new Map(myMap));
+
+      myMap.set("p4", "Tab");
+    myMap.set("price4", 36999);
+    console.log("Added products:", new Map(myMap));
+
+    myMap.set("price2", 1599);
+    console.log("price 2 updated :", new Map(myMap));
+
+    myMap.delete("p4");
+    myMap.delete("price4");
+
+    console.log("Product 4 deleted:", new Map(myMap));
+  </script>
+
+
+
+
+    </script>
+</body>
+</html>

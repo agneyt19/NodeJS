@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: 'Agney',
+            age: 20,
+            place:'Kochi',
+            greeting:  ()=> {
+                console.log("HEY !!! My name is :",this.name)
+                console.log("My place is at:",person.place)
+            },
+            p: ()=> {
+                console.log("the place",person.place)
+            }
+        }
+           
+          
+                console.log("my name is:",person.name)
+                 console.log("my age is:",person.age)
+                person.greeting();
+                person.p()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let employee = {
+            ename: 'Agney',
+            salary:20000,
+            designation:'Cyber',
+            employeeid:'e006',
+           
+            p:function()
+            {
+                
+                console.log("salary is:",this.salary)
+                     
+
+            },
+            updated:function()
+            {
+                 console.log("Updated salary is:",this.salary)
+            }
+
+        }
+          console.log("employee name is ",employee.ename)
+          console.log("Designation is ",employee.designation)
+        employee.p()
+        employee.city="Kochi"
+        employee.salary=25000
+        employee.p()
+        employee.updated()
+          //console.log("employee place is ",employee.city)
+        delete employee.city
+        onsole.log("employee name is ",employee.city)
+
+  
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myMap = new Map();
+
+myMap.set("p1", "Laptop");
+myMap.set("price1", 55000);
+myMap.set("p2", "Headphones");
+myMap.set("price2", 1999);
+myMap.set("p3", "Smartwatch");
+myMap.set("price3", 3499);
+
+
+console.log("Original products:");
+for (let i = 1; i <= 3; i++) {
+  console.log("p" + i, ":", myMap.get("p" + i));
+  console.log("price" + i, ":", myMap.get("price" + i));
+}
+
+
+myMap.set("p4", "Tab");
+myMap.set("price4", 36999);
+
+
+console.log("Added products:");
+for (let i = 1; i <= 4; i++) {
+  console.log("p" + i, ":", myMap.get("p" + i));
+  console.log("price" + i, ":", myMap.get("price" + i));
+}
+
+
+myMap.set("price2", 1599);
+
+
+console.log("Price 2 updated:");
+for (let i = 1; i <= 4; i++) {
+  console.log("p" + i, ":", myMap.get("p" + i));
+  console.log("price" + i, ":", myMap.get("price" + i));
+}
+
+
+myMap.delete("p4");
+myMap.delete("price4");
+
+console.log("Product 4 deleted:");
+for (let i = 1; i <= 3; i++) {
+  console.log("p" + i, ":", myMap.get("p" + i));
+  console.log("price" + i, ":", myMap.get("price" + i));
+}
+    </script>
+</body>
+</html>
